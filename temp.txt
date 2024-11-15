@@ -1,0 +1,115 @@
+
+D:\>cd pg7
+
+D:\pg7>notepad f1.txt
+
+D:\pg7>git init
+Initialized empty Git repository in D:/pg7/.git/
+
+D:\pg7>git add .
+
+D:\pg7>git commit -m "1st line inserted\"
+[master (root-commit) e0f9400] 1st line inserted"
+ 1 file changed, 1 insertion(+)
+ create mode 100644 f1.txt
+
+D:\pg7>git add .
+
+D:\pg7>git commit -m "2nd line inserted"
+[master dd19be9] 2nd line inserted
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\pg7>git add .
+
+D:\pg7>git commit -m "3rd line inserted"
+[master 0ec50ef] 3rd line inserted
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\pg7>git tag V1.0
+
+D:\pg7>git add .
+
+D:\pg7>git commit -m "4th line inserted"
+[master 8ee497b] 4th line inserted
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\pg7>git add .
+
+D:\pg7>git commit -m "5th line inserted"
+[master b7690ad] 5th line inserted
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+D:\pg7>git tag V1.1
+
+D:\pg7>git log
+commit b7690adfbe18172b56f310843a9ebe956b09e583 (HEAD -> master, tag: V1.1)
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:07:15 2024 +0530
+
+    5th line inserted
+
+commit 8ee497b72db605152c3d8137cf957ad59a2e08f4
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:06:04 2024 +0530
+
+    4th line inserted
+
+commit 0ec50ef59dee989cedd60a0985199dad5e7a3017 (tag: V1.0)
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:05:10 2024 +0530
+
+    3rd line inserted
+
+commit dd19be9f2fe9948be28e91455b88fc17b6f7c459
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:04:19 2024 +0530
+
+    2nd line inserted
+
+commit e0f9400b33a60081ede9c716d16c5f7805da25f6
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:03:50 2024 +0530
+
+    1st line inserted"
+
+D:\pg7>git tag -d V1.0
+Deleted tag 'V1.0' (was 0ec50ef)
+
+D:\pg7>git add .
+
+D:\pg7>git commit -m "6th line inserted"
+[master efbd0fb] 6th line inserted
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+D:\pg7>git tag V2.0
+
+D:\pg7>git log
+commit efbd0fba9a7d271ff80d5bf426b0abc6e708dc96 (HEAD -> master, tag: V2.0)
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:09:22 2024 +0530
+
+    6th line inserted
+
+commit b7690adfbe18172b56f310843a9ebe956b09e583 (tag: V1.1)
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:07:15 2024 +0530
+
+    5th line inserted
+
+commit 8ee497b72db605152c3d8137cf957ad59a2e08f4
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:06:04 2024 +0530
+
+    4th line inserted
+
+commit 0ec50ef59dee989cedd60a0985199dad5e7a3017
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:05:10 2024 +0530
+
+    3rd line inserted
+
+commit dd19be9f2fe9948be28e91455b88fc17b6f7c459
+Author: ashwinappu0308@gmail.com <ashwinappu0308@gmail.com>
+Date:   Thu Nov 14 16:04:19 2024 +0530
+
+    2nd line inserted
